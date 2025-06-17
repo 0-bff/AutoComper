@@ -1,0 +1,5 @@
+bdetectionmodel_05_01_23.onnx filter=lfs diff=lfs merge=lfs -text
+ffmpeg/osx filter=lfs diff=lfs merge=lfs -text
+ffmpeg/windows filter=lfs diff=lfs merge=lfs -text
+ffmpeg/linux filter=lfs diff=lfs merge=lfs -text
+models/bdetectionmodel_05_01_23_f16.onnx filter=lfs diff=lfs merge=lfs -text

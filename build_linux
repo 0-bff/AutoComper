@@ -1,0 +1,16 @@
+#!/bin/bash
+
+set -Eeuo pipefail
+set -x
+
+directory="env_linux"
+
+if [ ! -d "$directory" ]; then
+    python3 -m venv $directory
+fi
+
+source $directory/bin/activate
+pip install -r requirements.txt
+python setup.py build
+deactivate
+read -p "Press enter to continue..."
